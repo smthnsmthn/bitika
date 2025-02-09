@@ -4,28 +4,27 @@ body {
     font-family: 'Arial', sans-serif;
     color: #000;
     line-height: 1.6;
-    }
+}
+
 body .background {
-     background-image: url('images/background1.jpg'); /* Path to your image */
-     background-size: 50% auto; 
-     height: 100vh; /* Full viewport height */
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     color: white;
-     text-align: center;
-  }
+    background-image: url('images/background1.jpg');
+    background-size: 50% auto;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
 
 /* Header */
-/* Updated Header Styles */
-
 .header-container {
     display: flex;
     height: 25vh;
     align-items: center;
-    justify-content: space-between; /* Space between items */
+    justify-content: space-between;
     padding: 0 20px;
-    position: relative; /* To position the welcome section absolutely */
+    position: relative;
     overflow: hidden;
 }
 
@@ -37,15 +36,14 @@ body .background {
 }
 
 .welcome {
-    position: absolute; /* Position the welcome section absolutely */
-    left: 50%; 
-    transform: translateX(-50%); /* Perfectly center horizontally */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     max-width: 100%;
-    width:700px;
-    height:auto;
+    width: 700px;
+    height: auto;
 }
-
 
 header {
     background: linear-gradient(135deg, #000, #333);
@@ -53,8 +51,6 @@ header {
     padding: 2px;
     border-bottom: 2px solid #444;
 }
-
-
 
 /* Navigation */
 nav {
@@ -89,9 +85,10 @@ nav ul li a:hover {
     background: #fff;
     color: #000;
 }
+
 /* Description Section */
 .description {
-    background: rgb(0, 0, 0,0.85);
+    background: rgba(0, 0, 0, 0.85);
     padding: 60px 20px;
     text-align: center;
     position: relative;
@@ -142,71 +139,26 @@ nav ul li a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-
-/* Section */
-.section {
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: #000;
-    color: #fff;
-    border: 1px solid #444;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.section h2 {
-    color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    border-bottom: 2px solid #444;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-.section ul, .section ol {
-    padding-left: 20px;
-    font-size: 1rem;
-}
-
-.section ul li, .section ol li {
-    margin-bottom: 10px;
-}
-
-/* Service Cards */
-.service-cards {
+/* Instagram Embed Section */
+.ig {
+    margin-top: 20px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.card {
-    background: #fff;
-    color: #000;
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.instagram-embed-container {
+    width: 100%;
+    max-width: 540px; /* Adjust based on your design */
+    margin-bottom:10%;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #000;
-}
-
-.card p {
-    font-size: 1rem;
-    color: #444;
+.instagram-media {
+    width: 100% !important;
+    margin-bottom: 1% !important;
+    padding: 0 !important;
+    border: none !important;
 }
 
 /* Footer */
@@ -256,12 +208,9 @@ footer ul li a:hover {
         padding: 20px;
     }
 }
-title{
-    max-height:10%;
-}
-hr {
-    border: 1.5px solid white; 
-    width :400px;
-    text-align: center;
-  }
 
+hr {
+    border: 1.5px solid white;
+    width: 400px;
+    text-align: center;
+}
