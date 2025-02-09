@@ -101,8 +101,9 @@ nav ul li a:hover {
     justify-content: space-between; /* Distribute items evenly */
     align-items: center; /* Vertically align items in the center */
     gap: 60px; /* Space between each service */
-    width: 80%; /* Full width of the container */ /* Remove any extra margins */
+    width: 100vh; /* Full width of the container */ /* Remove any extra margins */
     padding: 20px; /* Add padding to the container */
+    margin-right: 20%;
 }
 
 /* Ensure services take equal space in the container */
