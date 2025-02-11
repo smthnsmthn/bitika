@@ -1,0 +1,256 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #000;
+    line-height: 1.6;
+  }
+  
+  /* Background */
+  body .background {
+    background-image: url('images/background1.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Header Container */
+  .header-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Three columns: logo (left), welcome (center), hamburger (right) */
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #000, #333);
+    border-bottom: 2px solid #444;
+  }
+  
+  /* Logo */
+  .logo {
+    width: 150px; /* Adjust logo size */
+    height: auto;
+    justify-self: start; /* Align logo to the far left */
+  }
+  
+  /* Welcome Image */
+  .welcome {
+    width: 250px; /* Increase size of welcome image */
+    height: auto;
+    justify-self: center; /* Center the welcome image */
+  }
+  
+  /* Hamburger Menu */
+  .hamburger-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+    justify-self: end; /* Align hamburger menu to the far right */
+  }
+  
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Navigation Menu */
+  nav {
+    background: #000;
+    padding: 10px 0;
+    border-bottom: 2px solid #444;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  /* Description Section */
+  .description {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .description-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .description-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .description h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 2px solid #444;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .description p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #444;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Footer */
+  footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.8rem;
+    border-top: 2px solid #444;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer ul li a:hover {
+    color: #ccc;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .header-container {
+      grid-template-columns: auto 1fr auto; /* Adjust grid layout for smaller screens */
+    }
+  
+    .welcome {
+      width: 200px; /* Adjust welcome image size for smaller screens */
+    }
+  
+    .hamburger-menu {
+      display: flex; /* Show hamburger menu on smaller screens */
+    }
+  
+    nav {
+      display: none; /* Hide nav by default on smaller screens */
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    nav.active {
+      display: block; /* Show nav when active */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Stack nav items vertically */
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0; /* Add spacing between nav items */
+    }
+  
+    .description {
+      padding: 20px 10px; /* Further reduce padding for very small screens */
+      margin: 10px auto;
+    }
+  
+    .description h2 {
+      font-size: 1.2rem; /* Further reduce font size for very small screens */
+    }
+  
+    .description p {
+      font-size: 0.9rem; /* Further reduce font size for very small screens */
+    }
+  
+    .description-content img {
+      max-width: 80%; /* Adjust image size for smaller screens */
+    }
+  
+    .cta-button {
+      padding: 6px 12px; /* Further reduce padding for very small screens */
+      font-size: 0.8rem; /* Further reduce font size for very small screens */
+    }
+  
+    footer {
+      padding: 10px 0; /* Further reduce padding for very small screens */
+      font-size: 0.7rem; /* Further reduce font size for very small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .description-content img {
+      max-width: 60%; /* Further adjust image size for very small screens */
+    }
+  }
+  
+  /* HR Styling */
+  hr {
+    border: 1.5px solid white;
+    width: 80%;
+    margin: 20px auto;
+  }
