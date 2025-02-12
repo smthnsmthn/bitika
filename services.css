@@ -159,7 +159,136 @@ nav ul li a:hover {
     height: auto;
     object-fit: contain;
 }
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Header and Navigation */
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
 
+    .hamburger-menu {
+        display: flex; /* Show hamburger menu on mobile */
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger-menu .bar {
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    nav {
+        display: none; /* Hide nav by default on mobile */
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav.active {
+        display: block; /* Show nav when hamburger menu is clicked */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add spacing between nav items */
+    }
+
+    /* Adjust logo size for mobile */
+    header .logo {
+        width: 200px; /* Smaller logo for mobile */
+    }
+
+    /* Description Section */
+    .description {
+        padding: 40px 15px; /* Reduce padding for smaller screens */
+        margin: 20px auto; /* Reduce margin for smaller screens */
+        max-width: 90%; /* Allow description to take more width on mobile */
+    }
+
+    .description h1 {
+        font-size: 2rem; /* Smaller heading for mobile */
+    }
+
+    .description p {
+        font-size: 1rem; /* Smaller font size for description text */
+    }
+
+    /* Service Section */
+    .service-container {
+        flex-direction: column; /* Stack services vertically */
+        align-items: center;
+        gap: 20px;
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .service {
+        flex: 1 1 100%; /* Each service takes full width */
+        min-width: 90%; /* Adjust min-width for smaller screens */
+    }
+
+    .service .icon {
+        width: 120px; /* Smaller icons for mobile */
+    }
+
+    .service h3 {
+        font-size: 1.2rem; /* Smaller heading for services */
+    }
+
+    .service p {
+        font-size: 0.9rem; /* Smaller font size for service text */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .header-container {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      .logo {
+        left: 50%;
+        transform: translateX(-27%); /* Center the logo */
+      }
+
+    .description {
+        padding: 30px 10px; /* Reduce padding for very small screens */
+    }
+
+    .description h1 {
+        font-size: 1.8rem; /* Smaller heading for very small screens */
+    }
+
+    .description p {
+        font-size: 0.9rem; /* Smaller font size for description text */
+    }
+
+    .service {
+        min-width: 95%; /* Adjust min-width for very small screens */
+    }
+
+    .service .icon {
+        width: 100px; /* Smaller icons for very small screens */
+    }
+
+    .service h3 {
+        font-size: 1.1rem; /* Smaller heading for services */
+    }
+
+    .service p {
+        font-size: 0.8rem; /* Smaller font size for service text */
+    }
+}
 
 
 
