@@ -9,11 +9,7 @@ body {
 body .background {
     background-image: url('images/background1.jpg'); 
     background-size: 50% auto; 
-<<<<<<< HEAD
     height: auto; 
-=======
-    height: 70vh; 
->>>>>>> fd8de39c3d6df80d7e795cfdfee4eec864eb9c1d
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,17 +100,11 @@ nav ul li a:hover {
     display: flex; /* Use flexbox for a row layout */
     justify-content: space-between; /* Distribute items evenly */
     align-items: center; /* Vertically align items in the center */
-<<<<<<< HEAD
     gap: 20px; /* Space between each service */
     width: 100%; /* Full width of the container */
     margin: 0; /* Remove any extra margins */
     padding: 20px; /* Add padding to the container */
 }
-=======
-    gap: 2vw; /* Space between each service */
-    width: 80vw; /* Full width of the container */ /* Remove any extra margins */
-    padding: 20px; /* Add padding to the container */}
->>>>>>> fd8de39c3d6df80d7e795cfdfee4eec864eb9c1d
 
 /* Ensure services take equal space in the container */
 .service {
@@ -169,7 +159,6 @@ nav ul li a:hover {
     height: auto;
     object-fit: contain;
 }
-<<<<<<< HEAD
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     /* Header and Navigation */
@@ -300,9 +289,6 @@ nav ul li a:hover {
         font-size: 0.8rem; /* Smaller font size for service text */
     }
 }
-=======
-
->>>>>>> fd8de39c3d6df80d7e795cfdfee4eec864eb9c1d
 
 
 
