@@ -1,221 +1,338 @@
 /* General Reset */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    color: #000;
-    line-height: 1.6;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #000;
+  line-height: 1.6;
 }
 
 body .background {
-    background-image: url('images/background1.jpg');
-    background-size: 50% auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    text-align: center;
+  background-image: url('images/background1.jpg');
+  background-size: 50% auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
 }
 
 /* Header */
 .header-container {
-    display: flex;
-    height: 25vh;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    position: relative;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 .logo {
-    width: 300px;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .welcome {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    max-width: 100%;
-    width: 700px;
-    height: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  max-width: 100%;
+  width: 700px;
+  height: auto;
 }
 
 header {
-    background: linear-gradient(135deg, #000, #333);
-    color: #fff;
-    padding: 2px;
-    border-bottom: 2px solid #444;
+  background: linear-gradient(135deg, #000, #333);
+  color: #fff;
+  padding: 2px;
+  border-bottom: 2px solid #444;
 }
 
 /* Navigation */
 nav {
-    background: #000;
-    padding: 10px 0;
-    border-bottom: 2px solid #444;
+  background: #000;
+  padding: 10px 0;
+  border-bottom: 2px solid #444;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background 0.3s ease, color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background: #fff;
-    color: #000;
+  background: #fff;
+  color: #000;
 }
 
 /* Description Section */
 .description {
-    background: rgba(0, 0, 0, 0.85);
-    padding: 60px 20px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    margin: 40px auto;
-    max-width: 800px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.85);
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .description-content {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .description h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #fff;
-    text-transform: uppercase;
-    border-bottom: 2px solid #444;
-    display: inline-block;
-    padding-bottom: 5px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 2px solid #444;
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
 .description p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #ccc;
-    line-height: 1.8;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ccc;
+  line-height: 1.8;
 }
 
 .cta-button {
-    display: inline-block;
-    background: #fff;
-    color: #000;
-    padding: 10px 20px;
-    font-size: 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .cta-button:hover {
-    background: #444;
-    color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background: #444;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Instagram Embed Section */
 .ig {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .instagram-embed-container {
-    width: 100%;
-    max-width: 540px; /* Adjust based on your design */
-    margin-bottom:10%;
+  width: 100%;
+  max-width: 540px; /* Adjust based on your design */
+  margin-bottom:10%;
 }
 
 .instagram-media {
-    width: 100% !important;
-    margin-bottom: 1% !important;
-    padding: 0 !important;
-    border: none !important;
+  width: 100% !important;
+  margin-bottom: 1% !important;
+  padding: 0 !important;
+  border: none !important;
 }
 
 /* Footer */
 footer {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.9rem;
-    border-top: 2px solid #444;
-    margin-bottom:0%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  border-top: 2px solid #444;
+  margin-bottom:0%;
 }
 
 footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 0;
-    margin: 10px 0 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  margin: 10px 0 0;
 }
 
 footer ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
-    color: #ccc;
+  color: #ccc;
 }
 
-/* Responsive Design */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
+  /* Header and Navigation */
+  .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+  }
 
-    nav ul li {
-        margin: 10px 0 0;
-    }
+  .hamburger-menu {
+      display: flex; /* Show hamburger menu on mobile */
+      flex-direction: column;
+      cursor: pointer;
+  }
 
-    .service-cards {
-        flex-direction: column;
-    }
+  .hamburger-menu .bar {
+      width: 25px;
+      height: 3px;
+      background: #fff;
+      margin: 4px 0;
+      transition: 0.4s;
+  }
 
-    .section {
-        padding: 20px;
-    }
+  nav {
+      display: none; /* Hide nav by default on mobile */
+      width: 100%;
+      padding: 10px 0;
+  }
+
+  nav.active {
+      display: block; /* Show nav when hamburger menu is clicked */
+  }
+
+  nav ul {
+      flex-direction: column; /* Stack nav items vertically */
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 10px 0; /* Add spacing between nav items */
+  }
+    /* Adjust logo size for mobile */
+    header .logo {
+      width: 200px; /* Smaller logo for mobile */
+  }
+
+  /* Description Section */
+  .description {
+      padding: 40px 15px; /* Reduce padding for smaller screens */
+      margin: 20px auto; /* Reduce margin for smaller screens */
+      max-width: 90%; /* Allow description to take more width on mobile */
+  }
+
+  .description h2 {
+      font-size: 1.8rem; /* Smaller heading for mobile */
+  }
+
+  .description p {
+      font-size: 1rem; /* Smaller font size for description text */
+  }
+
+  .cta-button {
+      font-size: 0.9rem; /* Smaller font size for button */
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+
+  /* Instagram Embed Section */
+  .ig {
+      margin-top: 10px; /* Reduce margin for smaller screens */
+  }
+
+  .instagram-embed-container {
+      max-width: 90%; /* Allow embed to take more width on mobile */
+  }
+
+  /* Footer */
+  footer {
+      padding: 15px 0; /* Reduce padding for smaller screens */
+  }
+
+  footer ul {
+      flex-direction: column; /* Stack footer links vertically */
+      gap: 10px; /* Add spacing between links */
+  }
+
+  /* Horizontal Rule */
+  hr {
+      width: 80%; /* Reduce hr width for mobile */
+  }
 }
 
-hr {
-    border: 1.5px solid white;
-    width: 400px;
-    text-align: center;
-}
-.playbutton{
-    height: 1000px;
-    width:1000px;
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .header-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .logo {
+    left: 50%;
+    transform: translateX(-27%); /* Center the logo */
+  }
+  .welcome{
+    display: none;
+  }
+  .welcometobitika{
+    width: 40vh;
+    justify-content: center;
+  }
+
+  .description {
+      padding: 30px 10px; /* Reduce padding for very small screens */
+  }
+
+  .description h2 {
+      font-size: 1.5rem; /* Smaller heading for very small screens */
+  }
+
+  .description p {
+      font-size: 0.9rem; /* Smaller font size for description text */
+  }
+
+  .cta-button {
+      font-size: 0.8rem; /* Smaller font size for button */
+      padding: 6px 12px; /* Adjust padding for very small screens */
+  }
+
+  .instagram-embed-container {
+      max-width: 95%; /* Allow embed to take more width on very small screens */
+  }
+
+  footer {
+      padding: 10px 0; /* Reduce padding for very small screens */
+  }
+
+  footer ul {
+      gap: 8px; /* Reduce spacing between links */
+  }
+
+  hr {
+      width: 70%; /* Even smaller hr width for very small screens */
+  }
+  
 }

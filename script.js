@@ -68,8 +68,9 @@ document.getElementById('gmailLink').addEventListener('click', function(event) {
 
     // Construct the Gmail compose URL with the recipient, subject, and body
     const gmailComposeUrl = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    // Open the Gmail compose window in the user's browser
-    window.location.href = gmailComposeUrl;
+
+    // Open Gmail in a new tab
+    window.open(gmailComposeUrl, '_blank');
 });
+
 

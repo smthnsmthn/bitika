@@ -128,3 +128,115 @@ hr {
     width:auto;
     height:200px;
   }
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Header and Navigation */
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show hamburger menu on mobile */
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger-menu .bar {
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    nav {
+        display: none; /* Hide nav by default on mobile */
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav.active {
+        display: block; /* Show nav when hamburger menu is clicked */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add spacing between nav items */
+    }
+
+    /* Adjust logo size for mobile */
+    header .logo {
+        width: 200px; /* Smaller logo for mobile */
+    }
+
+    /* Main Content Adjustments */
+    main {
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .description, .section1, .section2, .section3 {
+        padding: 30px 15px; /* Reduce padding for smaller screens */
+        margin: 20px auto; /* Reduce margin for smaller screens */
+        max-width: 90%; /* Allow sections to take more width on mobile */
+    }
+
+    .bitika {
+        width: 50%; /* Adjust logo size in description section */
+    }
+
+    hr {
+        width: 80%; /* Reduce hr width for mobile */
+    }
+
+    .icon {
+        height: 150px; /* Reduce icon size for mobile */
+    }
+
+    h1 {
+        font-size: 28px; /* Slightly smaller heading for mobile */
+    }
+
+    ul {
+        padding-left: 20px; /* Adjust list padding for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      .logo {
+        left: 50%;
+        transform: translateX(-15%); /* Center the logo */
+      }
+
+    .bitika {
+        width: 60%; /* Larger logo for very small screens */
+    }
+
+    hr {
+        width: 70%; /* Even smaller hr width for very small screens */
+    }
+
+    .icon {
+        height: 120px; /* Smaller icons for very small screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller heading for very small screens */
+    }
+
+    ul {
+        padding-left: 15px; /* Adjust list padding for very small screens */
+    }
+}

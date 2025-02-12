@@ -7,24 +7,30 @@
   <title>Bitika - Home</title>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <a href="index.html"><img src="images/BITIKA_LOGO-removebg.png" alt="Bitika Logo" class="logo" /></a>
-            <img src="images/welcome.png" class="welcome">
+  <header>
+    <div class="header-container">
+        <a href="index.html"><img src="images/BITIKA_LOGO-removebg.png" alt="Bitika Logo" class="logo"></a>
+        <img src="images/welcome.png" class="welcome">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    </div>
+</header>
+
+<nav id="nav-menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
     <div class="background">
         <section class="description">
             <div class="description-content">
-                <div><img src="images/welcomeindex.png"></div>
+                <div><img  src="images/welcomeindex.png"class="welcometobitika"></div>
                 <hr>
                 <p>
                     At ©<b>  Bitika </b>, we specialize in delivering innovative and reliable digital solutions tailored to meet your needs. 
@@ -88,4 +94,11 @@
         <p>© 2025 Bitika. All rights reserved.</p>
     </footer>
 </body>
+<script>
+  // JavaScript to toggle the mobile menu
+  function toggleMenu() {
+      const navMenu = document.getElementById("nav-menu");
+      navMenu.classList.toggle("active");
+  }
+</script>
 </html>
