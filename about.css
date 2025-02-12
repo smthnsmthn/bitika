@@ -128,6 +128,7 @@ hr {
     width:auto;
     height:200px;
   }
+<<<<<<< HEAD
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     /* Header and Navigation */
@@ -241,3 +242,5 @@ hr {
         padding-left: 15px; /* Adjust list padding for very small screens */
     }
 }
+=======
+>>>>>>> fd8de39c3d6df80d7e795cfdfee4eec864eb9c1d

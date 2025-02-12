@@ -258,6 +258,7 @@ nav ul li a:hover {
       opacity: 0;
     }
   }
+<<<<<<< HEAD
   /* Mobile Responsiveness */
 @media (max-width: 768px) {
   /* Header and Navigation */
@@ -406,6 +407,8 @@ nav ul li a:hover {
       padding: 6px 12px;
   }
 }
+=======
+>>>>>>> fd8de39c3d6df80d7e795cfdfee4eec864eb9c1d
 
 
   
