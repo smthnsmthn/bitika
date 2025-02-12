@@ -258,7 +258,7 @@ nav ul li a:hover {
       }
       .logo {
         left: 50%;
-        transform: translateX(-27%); /* Center the logo */
+        transform: translateX(-15%); /* Center the logo */
       }
 
     .description {
